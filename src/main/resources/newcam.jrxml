@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="newcam" pageWidth="1400" pageHeight="600" orientation="Landscape" columnWidth="1360" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="58b41c05-4fbd-45b0-93b4-d03a551352c4">
+	<field name="regno" class="java.lang.Long">
+		
+	</field>
+	<field name="name" class="java.lang.String">
+		
+	</field>
+	<field name="department" class="java.lang.String">
+		
+	</field>
+	<field name="cgpa" class="java.lang.Double">
+		
+	</field>
+	<field name="hsc" class="java.lang.Double">
+		
+	</field>
+	<field name="diploma" class="java.lang.Double">
+		
+	</field>
+	<field name="sslc" class="java.lang.Double">
+		
+	</field>
+	<field name="skills" class="java.lang.String">
+		
+	</field>
+	<field name="certifications" class="java.lang.String">
+		
+	</field>
+	<field name="mobile" class="java.lang.Long">
+		
+	</field>
+	<field name="email" class="java.lang.String">
+		
+	</field>
+	<field name="career" class="java.lang.String">
+		
+	</field>
+	<field name="status" class="java.lang.String">
+		
+	</field>
+	<group name="regno">
+		<groupExpression><![CDATA[$F{regno}]]></groupExpression>
+	</group>
+	<group name="name">
+		<groupExpression><![CDATA[$F{name}]]></groupExpression>
+	</group>
+	<group name="department">
+		<groupExpression><![CDATA[$F{department}]]></groupExpression>
+	</group>
+	<group name="cgpa">
+		<groupExpression><![CDATA[$F{cgpa}]]></groupExpression>
+	</group>
+	<group name="hsc">
+		<groupExpression><![CDATA[$F{hsc}]]></groupExpression>
+	</group>
+	<group name="diploma">
+		<groupExpression><![CDATA[$F{diploma}]]></groupExpression>
+	</group>
+	<group name="sslc">
+		<groupExpression><![CDATA[$F{sslc}]]></groupExpression>
+	</group>
+	<group name="skills">
+		<groupExpression><![CDATA[$F{skills}]]></groupExpression>
+	</group>
+	<group name="certifications">
+		<groupExpression><![CDATA[$F{certifications}]]></groupExpression>
+	</group>
+	<group name="mobile">
+		<groupExpression><![CDATA[$F{mobile}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<group name="career">
+		<groupExpression><![CDATA[$F{career}]]></groupExpression>
+	</group>
+	<group name="status">
+		<groupExpression><![CDATA[$F{status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="505" y="0" width="350" height="39" uuid="b68ac4b9-efc2-4063-a7fe-ba0fbdcd556c"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sona College of Technology]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="535" y="39" width="266" height="20" uuid="bce0ad0c-c66d-4bbc-9381-f81fa01e06d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[An Autonomous Institution in Salem]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="563" y="1" width="210" height="20" uuid="fbd15d0c-a358-412a-bca0-ed36db626172"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Placement Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="615" y="13" width="47" height="20" uuid="ceb2ba24-8800-442a-b726-e76d6ce4549a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SSLC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="14" width="115" height="20" uuid="c3ac894b-b1df-4b31-ad66-a73c94597dbd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="13" width="59" height="20" uuid="804300c1-1573-4778-9c55-9599646b9c21"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CGPA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="14" width="100" height="20" uuid="a88b0d5e-dbae-430e-b76e-93ccede41d83"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registration Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="970" y="13" width="77" height="20" uuid="c819ba8a-6833-4a3d-a8ec-9a1794dfd408"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="840" y="12" width="77" height="20" uuid="ba5c25f0-da9b-43be-a710-86879cf354d1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Desired Career]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="124" y="14" width="116" height="20" uuid="0d00b9f4-a99f-4aad-bd0a-2856ffa5eb4c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="13" width="59" height="20" uuid="53c540d1-0476-4417-b5b1-4a2874bf89d3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diploma]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="746" y="13" width="67" height="20" uuid="1c9197c0-ba17-4748-b49f-a9c0118545bb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Certifications]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="669" y="13" width="67" height="20" uuid="c45be060-5a1e-4720-9ef1-bdda111121d3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Skill sets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1280" y="12" width="77" height="20" uuid="aeef317c-d180-4108-8e76-22c28ada1b8d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="13" width="59" height="20" uuid="099a7163-e700-4cab-ae2a-9b8c0462cce1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[HSC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1070" y="13" width="142" height="20" uuid="151b814f-5e87-42c3-955b-2e2dd70d6ca6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="124" y="11" width="116" height="20" uuid="821a8f16-9fb9-4bb9-8ca3-dfbc574e37e3"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="840" y="10" width="77" height="20" uuid="c1e8c534-33b7-49d1-9173-903d891b497c"/>
+				<textFieldExpression><![CDATA[$F{career}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="11" width="125" height="20" uuid="b41f3264-d669-4cd8-9891-45194a88a02b"/>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="615" y="11" width="47" height="20" uuid="c89d3a03-9eb7-4c14-b53d-fa98a9fa6fda"/>
+				<textFieldExpression><![CDATA[$F{sslc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="746" y="11" width="84" height="20" uuid="2f6cd004-a055-46ff-8dd3-d26b4400af53"/>
+				<textFieldExpression><![CDATA[$F{certifications}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="669" y="11" width="67" height="20" uuid="abe795cf-49ed-4809-a9d5-35a736f1dfb5"/>
+				<textFieldExpression><![CDATA[$F{skills}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="11" width="100" height="20" uuid="2f2ab830-efee-4105-9ab3-8c8da6eae57d"/>
+				<textFieldExpression><![CDATA[$F{regno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="11" width="59" height="20" uuid="e7b62f4a-9504-4b98-b2e3-ba800cad647f"/>
+				<textFieldExpression><![CDATA[$F{hsc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="970" y="10" width="67" height="20" uuid="df9d807e-17a4-4f23-ac63-cd068ca249b0"/>
+				<textFieldExpression><![CDATA[$F{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1070" y="10" width="142" height="20" uuid="79d7192c-6d32-49d5-b414-ee5bac29f966"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1260" y="1" width="76" height="20" uuid="d961e4dc-bdbc-40dc-94ce-6b0adbe68b60"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="541" y="11" width="59" height="20" uuid="1b6e0504-9e46-4116-b6a2-5f848900c9f1"/>
+				<textFieldExpression><![CDATA[$F{diploma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="11" width="59" height="20" uuid="dc097570-0712-4b9f-9b95-0474b4468e30"/>
+				<textFieldExpression><![CDATA[$F{cgpa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
