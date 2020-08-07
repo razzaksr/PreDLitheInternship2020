@@ -50,7 +50,7 @@ public class ApiController
 	public String del(@RequestBody Candidates candidates)
 	{
 		service.remove(candidates);
-		return "Cndidate Deleted";
+		return "Candidate Deleted";
 	}
 	@GetMapping("/oneById/{id}")
 	public Candidates fetchOne(@PathVariable("id") Long id)
