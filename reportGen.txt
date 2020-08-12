@@ -1,0 +1,37 @@
+CampService:
+public String generate(List<Candidates> can,String format)
+	{
+		File fgen=null;
+		try
+		{
+			File file = ResourceUtils.getFile("classpath:newcam.jrxml");
+	        JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+	        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(can);
+	        Map<String, Object> parameters = new HashMap<>();
+	        parameters.put("createdBy", "Razak Mohamed");
+	        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+	        if (format.equalsIgnoreCase("html")) {
+	        	fgen=new File("candidate.html");
+	            JasperExportManager.exportReportToHtmlFile(jasperPrint, fgen.getAbsolutePath());
+	        }
+	        if (format.equalsIgnoreCase("pdf")) {
+	        	fgen=new File("candidate.pdf");
+	            JasperExportManager.exportReportToPdfFile(jasperPrint, fgen.getAbsolutePath());
+	        }
+		}
+		catch(JRException j)
+		{j.printStackTrace();} 
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String hai="Report generated @ "+fgen.getAbsolutePath();
+		return hai;
+	}
+
+pom:
+<dependency>
+		    <groupId>net.sf.jasperreports</groupId>
+		    <artifactId>jasperreports</artifactId>
+		    <version>6.13.0</version>
+		</dependency>
